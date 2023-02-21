@@ -14,8 +14,8 @@ SUBSTRINGS = ["post-stationnement", "www.stationnement.gouv.fr"]
 
 NUMBER_OF_PROCESSES = 6
 
-def get_pdf_path(dict):
-    ''''''
+def generate_output_path(dict):
+    ''' Takes relevant information from dictionary to name output .pdf file. '''
     year = dict['Date'][-4:]
     month = dict['Date'][3:5]
     month_name = month + "-" + calendar.month_name[int(month)].capitalize()
@@ -31,7 +31,7 @@ def get_pdf_path(dict):
 
 
 def pdf_extractor(file):
-    ''''''
+    ''' Handles the whole data extraction process for one file. '''
     if file.suffix == ".pdf" and file.is_file():
         filePath = file.as_posix()
         reader = PdfReader(filePath)
@@ -45,16 +45,18 @@ def pdf_extractor(file):
             text = page.extract_text()
             fine = '\n'.join(text).replace('\r', '').replace('\n', '')
             
+            """ Some fines can be longer than one page. The following block adapts the script behavior depending
+            on this fact. """
             if SUBSTRINGS[0] in text and SUBSTRINGS[1] not in text: # Means current page is main fine page
                 if last_page == "fine_page":
-                    pdf_path = get_pdf_path(fine_dict)
+                    pdf_path = generate_output_path(fine_dict)
                     try:
                         with pdf_path.open("wb") as output_stream:
                             output.write(output_stream)
                     except:
                         print(f"Could not create {fine_dict['id']}.pdf")                 
                 
-                fine_dict = data_structuration(fine)
+                fine_dict = text_to_dict(fine)
                 file_structured_data.append(fine_dict)
 
                 output = PdfWriter()
@@ -65,7 +67,7 @@ def pdf_extractor(file):
             elif SUBSTRINGS[0] not in text and SUBSTRINGS[1] in text: # Means current page is not main fine page
                 output.add_page(page)
 
-                pdf_path = get_pdf_path(fine_dict)
+                pdf_path = generate_output_path(fine_dict)
 
                 try:
                     with pdf_path.open("wb") as output_stream:
@@ -76,7 +78,7 @@ def pdf_extractor(file):
                 last_page = "modalites_page"
 
         if last_page == "fine_page":
-            pdf_path = get_pdf_path(fine_dict)
+            pdf_path = generate_output_path(fine_dict)
             try:
                 with pdf_path.open("wb") as output_stream:
                     output.write(output_stream)
@@ -91,40 +93,39 @@ def pdf_extractor(file):
     return file_structured_data
 
 
-def data_structuration(fine):
-    ''''''
+def text_to_dict(text):
+    ''' Uses regex filtering to transform text input. Outputs a dictionary. '''
     try:
-        immat_vehicule = re.search("\w\s*\w\s*-\s*\d\s*\d\s*\d\s*-\s*\w\s*\w", fine).group().replace(" ", "")
+        immat_vehicule = re.search("\w\s*\w\s*-\s*\d\s*\d\s*\d\s*-\s*\w\s*\w", text).group().replace(" ", "")
         if immat_vehicule[0:2] == "GO":
             immat_vehicule = immat_vehicule.replace("GO", "GD")
     except AttributeError:
         immat_vehicule = ""
 
     try:
-        date = re.search("[Ll]e\s*([\d\s]+\/[\d\s]+\/[\d\s]{4}?)", fine).group(1).replace(" ", "")
+        date = re.search("[Ll]e\s*([\d\s]+\/[\d\s]+\/[\d\s]{4}?)", text).group(1).replace(" ", "")
     except AttributeError:
         date = ""
 
     try:
-        hour = re.search("[Ll]e\s*[\d\s]+\/[\d\s]+\/[\d\s]{4}\s*à\s*([A-Za-z0-9]{1}\s*[A-Za-z0-9]{1}\s*[Hh]\s*[A-Za-z0-9]{1}\s*[A-Za-z0-9]{1})", fine).group(1).replace(" ", "").replace("O", "0")
+        hour = re.search("[Ll]e\s*[\d\s]+\/[\d\s]+\/[\d\s]{4}\s*à\s*([A-Za-z0-9]{1}\s*[A-Za-z0-9]{1}\s*[Hh]\s*[A-Za-z0-9]{1}\s*[A-Za-z0-9]{1})", text).group(1).replace(" ", "").replace("O", "0")
     except AttributeError:
         hour = ""
 
     try:
-        address = re.search("Lieu\s*:[\s~\-]*(\d*\s[a-zA-Z_ ÈÊÉ\-\r\n']*)\s+\d*", fine).group(1).strip()
-        # "Lieu\s*:\s*[A-Z ÀÈÉ\r\n'-:]*"
+        address = re.search("Lieu\s*:[\s~\-]*(\d*\s[a-zA-Z_ ÈÊÉ\-\r\n']*)\s+\d*", text).group(1).strip()
     except AttributeError:
         address = ""
 
     try:
-        zip_code = re.search("Lieu\s*:[\s~\-]*\d*\s[a-zA-Z_ ÈÊÉ\-\r\n']*\s+([A-Za-z0-9]{5}?)", fine).group(1)
+        zip_code = re.search("Lieu\s*:[\s~\-]*\d*\s[a-zA-Z_ ÈÊÉ\-\r\n']*\s+([A-Za-z0-9]{5}?)", text).group(1)
         if not zip_code.isnumeric():
             zip_code = ""
     except AttributeError:
         zip_code = ""
 
     try:
-        amount = re.search("\s*à\s*:\s*(\d{1,3}\,?\d{1,3})\s*euros", fine).group(1)
+        amount = re.search("\s*à\s*:\s*(\d{1,3}\,?\d{1,3})\s*euros", text).group(1)
     except AttributeError:
         amount = ""
 
@@ -146,7 +147,7 @@ def data_structuration(fine):
 
 
 def pool_handler():
-    ''''''
+    ''' Generates a pool of processes to handle multiple .pdf files at a time. '''
     # Start the stopwatch / counter
     t1_start = time.perf_counter()
 
@@ -168,7 +169,7 @@ def pool_handler():
 
 
 def save_data(retrieved_data, fileName):
-    ''''''
+    ''' Saves all dictionaries to .json and .csv formats. '''
     json_path = pathlib.Path(STRUCTURED_DATA_DIR, f"{fileName}.json")
     csv_path = pathlib.Path(STRUCTURED_DATA_DIR, f"{fileName}.csv")
 

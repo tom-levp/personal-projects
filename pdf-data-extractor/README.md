@@ -7,6 +7,9 @@ In my case, the files I wanted to analyze were parking fines (in Paris you get a
 
 The format of those fines is identical wherever you get fined as long as it is within the French territory.
 
+## Demo
+![Live Extraction](assets/demo.gif)
+
 ## Preparation
 ### 1. Install dependencies :hatching_chick:
 Inside the project root, run: `pip install -r 'requirements.txt'`

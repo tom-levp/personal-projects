@@ -8,10 +8,10 @@ In my case, the files I wanted to analyze were parking fines (in Paris you get a
 The format of those fines is identical wherever you get fined as long as it is within the French territory.
 
 ## Preparation
-### 1. Install dependencies
+### 1. Install dependencies :hatching_chick:
 Inside the project root, run: `pip install -r 'requirements.txt'`
 
-### 2. Make sure your files are ready
+### 2. Make sure your files are ready :hatched_chick:
 Such a project is only interesting if you have a lot of files to analyze, otherwise its usefulness is obviously questionable.
 
 That being said, the first thing to do is to put all your files into `/data/input`. For this project, I included **one** sample showcase _.pdf_ file.

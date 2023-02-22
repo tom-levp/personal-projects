@@ -8,17 +8,18 @@ Following the Round Robin format, any team will play against all the other teams
 
 ## Parameters preparation
 Before running the main apps, head first into `/data/input/game_params.py`. Here, you must fill three lists:
-* _team_size_, integer which must be equal to 1 or 2 (*_need to work on that to increase this limit_*);
-* _players_, a bunch of strings, you can put whatever you want here,
-* and _games_, likewise.
+* `team_size`, integer which must be equal to 1 or 2 (*_need to work on that to increase this limit_*);
+* `players`, a bunch of strings, you can put whatever you want here,
+* and `games`, likewise.
 
 ## Core apps
 There are two core apps:
-* _match_maker.py_, which must be run first in order to create random teams of players and their matchups with the following constraints:
+* `match_maker.py`, which must be run first in order to create random teams of players and their matchups with the following constraints:
     * Every team should not play the same game twice
-    * Every team must play against all the other teams  
+    * Every team must play against all the other teams
+ 
   Running this script will create files in the `/data/output/` directory. With these you can keep track of the teams, their corresponding individual program (which games and how many), as well as the tournament matchups.
-* _score_computer.py_, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled
+* `score_computer.py`, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled.
 
 ## Demo
-![Demo](test)
+![Demo]()

@@ -1,66 +1,66 @@
 [
     {
         "team": [
-            "Kelly",
-            "Martin"
+            "Marie",
+            "Clément"
         ],
         "games": [
-            "Mount Your FriendsMikado",
+            "Speed Eating Challenge",
+            "Beer Pong",
+            "Tower Fall",
+            "Mario Kart 8"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Kelly",
+            "Kenneth"
+        ],
+        "games": [
+            "Speed Eating Challenge",
+            "Yam's",
+            "Tekken 7",
+            "Just Dance"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Christine",
+            "Dan"
+        ],
+        "games": [
+            "Speed Eating Challenge",
             "Flip Glass",
-            "Super Smash Bros Ultimate",
-            "Windjammers 2"
+            "Tekken 7",
+            "Mario Kart 8"
         ],
         "nb_games": 4
     },
     {
         "team": [
             "Nathalie",
-            "Marie"
+            "Lise"
         ],
         "games": [
+            "Speed Eating Challenge",
             "Mount Your FriendsMikado",
-            "Shi Fu Mi",
-            "Just Dance",
-            "Tekken 7"
+            "Tower Fall",
+            "Yam's"
         ],
         "nb_games": 4
     },
     {
         "team": [
-            "Lise",
-            "Clément"
+            "Martin",
+            "Louis"
         ],
         "games": [
-            "Tekken 7",
-            "Scattergories",
-            "Just Dance",
-            "Super Smash Bros Ultimate"
-        ],
-        "nb_games": 4
-    },
-    {
-        "team": [
-            "Louis",
-            "Kenneth"
-        ],
-        "games": [
-            "Tekken 7",
-            "Shi Fu Mi",
-            "Beer Pong",
-            "Windjammers 2"
-        ],
-        "nb_games": 4
-    },
-    {
-        "team": [
-            "Dan",
-            "Christine"
-        ],
-        "games": [
-            "Scattergories",
             "Flip Glass",
+            "Mount Your FriendsMikado",
             "Beer Pong",
-            "Tekken 7"
+            "Just Dance"
         ],
         "nb_games": 4
     }

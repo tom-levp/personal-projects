@@ -1,0 +1,37 @@
+[
+    {
+        "team": [
+            "Marie",
+            "Clément"
+        ],
+        "score": 3
+    },
+    {
+        "team": [
+            "Christine",
+            "Dan"
+        ],
+        "score": 3
+    },
+    {
+        "team": [
+            "Kelly",
+            "Kenneth"
+        ],
+        "score": 2
+    },
+    {
+        "team": [
+            "Nathalie",
+            "Lise"
+        ],
+        "score": 1
+    },
+    {
+        "team": [
+            "Martin",
+            "Louis"
+        ],
+        "score": 1
+    }
+]

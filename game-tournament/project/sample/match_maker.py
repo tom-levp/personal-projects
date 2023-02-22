@@ -2,19 +2,19 @@ from collections import Counter
 import random, json, pathlib
 import pandas as pd
 
-from ..data.input.game_params import players, games, logo
+from ..data.input.game_params import players, games, logo, team_size
 
 ROOT_DIR = pathlib.Path(__file__).resolve().parents[1]
 
-# For team making
+
 def pop_random(list):
-    """ Delete a random element from a list and return its name """
+    ''' Deletes a random element from a list and return its name '''
     idx = random.randrange(0, len(list))
     return list.pop(idx)
 
 
 def make_teams(players):
-    """ Return a list of teams from a list of players """
+    ''' Returns a list of 2-people teams from a list of players '''
     teams = []
     init_len = len(players)
 
@@ -36,7 +36,15 @@ def make_teams(players):
 
 
 def make_tournament(players, games):
-    teams = make_teams(players)
+    ''' Takes a list of games and a list of teams to create a list of match-ups.
+    It also outputs the program per team. '''
+    if team_size <= 0:
+        raise ValueError("Team size cannot be <= 0. Change the parameter in game_params.py")
+    elif team_size == 1:
+        teams = players
+    else:
+        teams = make_teams(players)
+        
     pairs = [(i, j) for i in teams for j in teams if i != j]
     random.shuffle(pairs)
     match_ups = list(set(map(tuple, map(sorted, pairs))))
@@ -54,8 +62,8 @@ def make_tournament(players, games):
 
                 turn = {
 
-                    "team_1": match_up[0],
-                    "team_2": match_up[1],
+                    "team_a": match_up[0],
+                    "team_b": match_up[1],
                     "game": game
 
                 }
@@ -75,10 +83,11 @@ def make_tournament(players, games):
         dict["nb_games"] = len(set(dict["games"]))
         program.append(dict)
     
-    return final_list, program
+    return final_list, program, teams
 
 
 def save_data(retrieved_data, fileName):
+    ''' Saves data in .json and .csv formats. '''
     json_path = pathlib.Path(f"{ROOT_DIR}\\data\\output", f"{fileName}.json")
     csv_path = pathlib.Path(f"{ROOT_DIR}\\data\\output", f"{fileName}.csv")
 
@@ -93,6 +102,7 @@ def save_data(retrieved_data, fileName):
 
 if __name__ == '__main__':
     print(logo)
-    tournament, program = make_tournament(players, games)
+    tournament, program, teams = make_tournament(players, games)
     save_data(tournament, "tournament")
     save_data(program, "program")
+    save_data(teams, "teams")

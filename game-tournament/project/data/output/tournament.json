@@ -1,0 +1,112 @@
+[
+    {
+        "team_1": [
+            "Lise",
+            "Clément"
+        ],
+        "team_2": [
+            "Louis",
+            "Kenneth"
+        ],
+        "game": "Tekken 7"
+    },
+    {
+        "team_1": [
+            "Kelly",
+            "Martin"
+        ],
+        "team_2": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Mount Your FriendsMikado"
+    },
+    {
+        "team_1": [
+            "Dan",
+            "Christine"
+        ],
+        "team_2": [
+            "Lise",
+            "Clément"
+        ],
+        "game": "Scattergories"
+    },
+    {
+        "team_1": [
+            "Louis",
+            "Kenneth"
+        ],
+        "team_2": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Shi Fu Mi"
+    },
+    {
+        "team_1": [
+            "Lise",
+            "Clément"
+        ],
+        "team_2": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Just Dance"
+    },
+    {
+        "team_1": [
+            "Dan",
+            "Christine"
+        ],
+        "team_2": [
+            "Kelly",
+            "Martin"
+        ],
+        "game": "Flip Glass"
+    },
+    {
+        "team_1": [
+            "Kelly",
+            "Martin"
+        ],
+        "team_2": [
+            "Lise",
+            "Clément"
+        ],
+        "game": "Super Smash Bros Ultimate"
+    },
+    {
+        "team_1": [
+            "Dan",
+            "Christine"
+        ],
+        "team_2": [
+            "Louis",
+            "Kenneth"
+        ],
+        "game": "Beer Pong"
+    },
+    {
+        "team_1": [
+            "Dan",
+            "Christine"
+        ],
+        "team_2": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Tekken 7"
+    },
+    {
+        "team_1": [
+            "Kelly",
+            "Martin"
+        ],
+        "team_2": [
+            "Louis",
+            "Kenneth"
+        ],
+        "game": "Windjammers 2"
+    }
+]

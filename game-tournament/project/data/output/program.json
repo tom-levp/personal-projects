@@ -1,0 +1,67 @@
+[
+    {
+        "team": [
+            "Kelly",
+            "Martin"
+        ],
+        "games": [
+            "Mount Your FriendsMikado",
+            "Flip Glass",
+            "Super Smash Bros Ultimate",
+            "Windjammers 2"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Nathalie",
+            "Marie"
+        ],
+        "games": [
+            "Mount Your FriendsMikado",
+            "Shi Fu Mi",
+            "Just Dance",
+            "Tekken 7"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Lise",
+            "Clément"
+        ],
+        "games": [
+            "Tekken 7",
+            "Scattergories",
+            "Just Dance",
+            "Super Smash Bros Ultimate"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Louis",
+            "Kenneth"
+        ],
+        "games": [
+            "Tekken 7",
+            "Shi Fu Mi",
+            "Beer Pong",
+            "Windjammers 2"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Dan",
+            "Christine"
+        ],
+        "games": [
+            "Scattergories",
+            "Flip Glass",
+            "Beer Pong",
+            "Tekken 7"
+        ],
+        "nb_games": 4
+    }
+]

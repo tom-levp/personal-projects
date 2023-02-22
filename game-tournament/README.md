@@ -21,4 +21,4 @@ There are two core apps:
 * _score_computer.py_, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled
 
 ## Demo
-![Demo]()
+![Demo](test)

@@ -104,5 +104,5 @@ if __name__ == '__main__':
     print(logo)
     tournament, program, teams = make_tournament(players, games)
     save_data(tournament, "tournament")
-    save_data(program, "program")
+    save_data(program, "team_program")
     save_data(teams, "teams")

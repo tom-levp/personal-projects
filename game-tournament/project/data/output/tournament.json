@@ -1,111 +1,111 @@
 [
     {
         "team_a": [
-            "Christine",
-            "Dan"
-        ],
-        "team_b": [
-            "Nathalie",
-            "Lise"
-        ],
-        "game": "Speed Eating Challenge"
-    },
-    {
-        "team_a": [
-            "Christine",
-            "Dan"
+            "Clément",
+            "Christine"
         ],
         "team_b": [
             "Martin",
-            "Louis"
+            "Dan"
         ],
-        "game": "Flip Glass"
+        "game": "Just Dance"
     },
     {
         "team_a": [
-            "Martin",
-            "Louis"
+            "Lise",
+            "Kenneth"
         ],
         "team_b": [
-            "Nathalie",
-            "Lise"
+            "Louis",
+            "Marie"
         ],
-        "game": "Mount Your FriendsMikado"
+        "game": "Yam's"
+    },
+    {
+        "team_a": [
+            "Lise",
+            "Kenneth"
+        ],
+        "team_b": [
+            "Martin",
+            "Dan"
+        ],
+        "game": "Tower Fall"
+    },
+    {
+        "team_a": [
+            "Louis",
+            "Marie"
+        ],
+        "team_b": [
+            "Martin",
+            "Dan"
+        ],
+        "game": "Dragon Ball Fighterz"
     },
     {
         "team_a": [
             "Kelly",
+            "Nathalie"
+        ],
+        "team_b": [
+            "Lise",
             "Kenneth"
         ],
-        "team_b": [
-            "Marie",
-            "Clément"
-        ],
-        "game": "Speed Eating Challenge"
+        "game": "Dragon Ball Fighterz"
     },
     {
         "team_a": [
-            "Marie",
-            "Clément"
+            "Kelly",
+            "Nathalie"
         ],
         "team_b": [
-            "Martin",
-            "Louis"
-        ],
-        "game": "Beer Pong"
-    },
-    {
-        "team_a": [
-            "Marie",
-            "Clément"
-        ],
-        "team_b": [
-            "Nathalie",
-            "Lise"
+            "Louis",
+            "Marie"
         ],
         "game": "Tower Fall"
     },
     {
         "team_a": [
             "Kelly",
-            "Kenneth"
-        ],
-        "team_b": [
-            "Nathalie",
-            "Lise"
-        ],
-        "game": "Yam's"
-    },
-    {
-        "team_a": [
-            "Christine",
-            "Dan"
-        ],
-        "team_b": [
-            "Kelly",
-            "Kenneth"
-        ],
-        "game": "Tekken 7"
-    },
-    {
-        "team_a": [
-            "Kelly",
-            "Kenneth"
+            "Nathalie"
         ],
         "team_b": [
             "Martin",
-            "Louis"
+            "Dan"
         ],
-        "game": "Just Dance"
+        "game": "Scattergories"
     },
     {
         "team_a": [
-            "Christine",
-            "Dan"
+            "Clément",
+            "Christine"
         ],
         "team_b": [
-            "Marie",
-            "Clément"
+            "Lise",
+            "Kenneth"
+        ],
+        "game": "Blind Test"
+    },
+    {
+        "team_a": [
+            "Clément",
+            "Christine"
+        ],
+        "team_b": [
+            "Louis",
+            "Marie"
+        ],
+        "game": "Beer Pong"
+    },
+    {
+        "team_a": [
+            "Clément",
+            "Christine"
+        ],
+        "team_b": [
+            "Kelly",
+            "Nathalie"
         ],
         "game": "Mario Kart 8"
     }

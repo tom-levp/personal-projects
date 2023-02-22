@@ -1,4 +1,4 @@
-team_size = 2
+team_size = 2 # 1 or 2
 
 players = [
 

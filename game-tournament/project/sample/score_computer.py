@@ -14,8 +14,8 @@ def clear_console():
 
 def get_score_input(team):
     while True:
-        user_input = int(input(f"What score did {team} get? [0-1]\n"))
-        if user_input == 0 or user_input == 1:
+        user_input = int(input(f"What score did {team} get? [0 = LOSS | 1 = TIE | 2 = WIN]\n"))
+        if user_input in range(0, 3):
             return user_input
         else:
             print("Invalid input. Please try again.")
@@ -92,10 +92,10 @@ def main():
         display_matchups(matchups)
         display_results(results)
 
-        # Ask the user to select a matchup to update
+        # Asks the user to select a matchup to update
         selection = get_matchup_input(matchups)
 
-        # Update the selected matchup with results
+        # Updates the selected matchup with results
         selected_matchup = matchups[selection - 1]
         update_matchup(selected_matchup, scores)
         

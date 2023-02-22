@@ -16,7 +16,7 @@ Before running the main apps, head first into `/data/input/game_params.py`. Here
 There are two core apps:
 * _match_maker.py_, which must be run first in order to create random teams of players and their matchups with the following constraints:
     * Every team should not play the same game twice
-    * Every team must play against all the other teams
+    * Every team must play against all the other teams  
   Running this script will create files in the `/data/output/` directory. With these you can keep track of the teams, their corresponding individual program (which games and how many), as well as the tournament matchups.
 * _score_computer.py_, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled
 

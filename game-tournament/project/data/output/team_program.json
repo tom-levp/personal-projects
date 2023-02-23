@@ -2,65 +2,65 @@
     {
         "team": [
             "Louis",
-            "Marie"
+            "Clément"
         ],
         "games": [
-            "Yam's",
-            "Dragon Ball Fighterz",
-            "Tower Fall",
-            "Beer Pong"
-        ],
-        "nb_games": 4
-    },
-    {
-        "team": [
-            "Clément",
-            "Christine"
-        ],
-        "games": [
-            "Just Dance",
-            "Blind Test",
-            "Beer Pong",
-            "Mario Kart 8"
-        ],
-        "nb_games": 4
-    },
-    {
-        "team": [
-            "Lise",
-            "Kenneth"
-        ],
-        "games": [
-            "Yam's",
-            "Tower Fall",
-            "Dragon Ball Fighterz",
-            "Blind Test"
-        ],
-        "nb_games": 4
-    },
-    {
-        "team": [
-            "Kelly",
-            "Nathalie"
-        ],
-        "games": [
-            "Dragon Ball Fighterz",
-            "Tower Fall",
             "Scattergories",
-            "Mario Kart 8"
+            "Speed List",
+            "Blind Test",
+            "Speed Eating Challenge"
         ],
         "nb_games": 4
     },
     {
         "team": [
             "Martin",
-            "Dan"
+            "Christine"
         ],
         "games": [
-            "Just Dance",
             "Tower Fall",
-            "Dragon Ball Fighterz",
+            "Flip Glass",
+            "Blind Test",
+            "Mario Party"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Dan",
+            "Kenneth"
+        ],
+        "games": [
+            "Blind Test",
+            "Mario Party",
+            "Speed Eating Challenge",
             "Scattergories"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Kelly",
+            "Lise"
+        ],
+        "games": [
+            "Tower Fall",
+            "Speed List",
+            "Speed Eating Challenge",
+            "Scattergories"
+        ],
+        "nb_games": 4
+    },
+    {
+        "team": [
+            "Nathalie",
+            "Marie"
+        ],
+        "games": [
+            "Blind Test",
+            "Scattergories",
+            "Speed Eating Challenge",
+            "Flip Glass"
         ],
         "nb_games": 4
     }

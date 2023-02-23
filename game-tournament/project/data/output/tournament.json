@@ -1,112 +1,112 @@
 [
     {
         "team_a": [
-            "Clément",
-            "Christine"
-        ],
-        "team_b": [
-            "Martin",
-            "Dan"
-        ],
-        "game": "Just Dance"
-    },
-    {
-        "team_a": [
-            "Lise",
+            "Dan",
             "Kenneth"
         ],
         "team_b": [
-            "Louis",
+            "Nathalie",
             "Marie"
-        ],
-        "game": "Yam's"
-    },
-    {
-        "team_a": [
-            "Lise",
-            "Kenneth"
-        ],
-        "team_b": [
-            "Martin",
-            "Dan"
-        ],
-        "game": "Tower Fall"
-    },
-    {
-        "team_a": [
-            "Louis",
-            "Marie"
-        ],
-        "team_b": [
-            "Martin",
-            "Dan"
-        ],
-        "game": "Dragon Ball Fighterz"
-    },
-    {
-        "team_a": [
-            "Kelly",
-            "Nathalie"
-        ],
-        "team_b": [
-            "Lise",
-            "Kenneth"
-        ],
-        "game": "Dragon Ball Fighterz"
-    },
-    {
-        "team_a": [
-            "Kelly",
-            "Nathalie"
-        ],
-        "team_b": [
-            "Louis",
-            "Marie"
-        ],
-        "game": "Tower Fall"
-    },
-    {
-        "team_a": [
-            "Kelly",
-            "Nathalie"
-        ],
-        "team_b": [
-            "Martin",
-            "Dan"
-        ],
-        "game": "Scattergories"
-    },
-    {
-        "team_a": [
-            "Clément",
-            "Christine"
-        ],
-        "team_b": [
-            "Lise",
-            "Kenneth"
         ],
         "game": "Blind Test"
     },
     {
         "team_a": [
-            "Clément",
-            "Christine"
+            "Kelly",
+            "Lise"
         ],
         "team_b": [
-            "Louis",
-            "Marie"
+            "Martin",
+            "Christine"
         ],
-        "game": "Beer Pong"
+        "game": "Tower Fall"
     },
     {
         "team_a": [
-            "Clément",
+            "Louis",
+            "Clément"
+        ],
+        "team_b": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Scattergories"
+    },
+    {
+        "team_a": [
+            "Kelly",
+            "Lise"
+        ],
+        "team_b": [
+            "Louis",
+            "Clément"
+        ],
+        "game": "Speed List"
+    },
+    {
+        "team_a": [
+            "Kelly",
+            "Lise"
+        ],
+        "team_b": [
+            "Nathalie",
+            "Marie"
+        ],
+        "game": "Speed Eating Challenge"
+    },
+    {
+        "team_a": [
+            "Martin",
             "Christine"
         ],
         "team_b": [
-            "Kelly",
-            "Nathalie"
+            "Nathalie",
+            "Marie"
         ],
-        "game": "Mario Kart 8"
+        "game": "Flip Glass"
+    },
+    {
+        "team_a": [
+            "Louis",
+            "Clément"
+        ],
+        "team_b": [
+            "Martin",
+            "Christine"
+        ],
+        "game": "Blind Test"
+    },
+    {
+        "team_a": [
+            "Dan",
+            "Kenneth"
+        ],
+        "team_b": [
+            "Martin",
+            "Christine"
+        ],
+        "game": "Mario Party"
+    },
+    {
+        "team_a": [
+            "Dan",
+            "Kenneth"
+        ],
+        "team_b": [
+            "Louis",
+            "Clément"
+        ],
+        "game": "Speed Eating Challenge"
+    },
+    {
+        "team_a": [
+            "Dan",
+            "Kenneth"
+        ],
+        "team_b": [
+            "Kelly",
+            "Lise"
+        ],
+        "game": "Scattergories"
     }
 ]

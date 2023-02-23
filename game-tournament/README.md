@@ -19,7 +19,10 @@ There are two core apps:
     * Every team must play against all the other teams
  
   Running this script will create files in the `/data/output/` directory. With these you can keep track of the teams, their corresponding individual program (which games and how many), as well as the tournament matchups.
-* `score_computer.py`, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled.
 
-## Demo
-![Demo]()
+  ![Demo](assets/mm_demo.gif)
+* `score_computer.py`, which must be run after, to properly follow the tournament, see the list of unresolved matchups and input team scores once the matchups are settled.
+  
+  ![Demo](assets/sc_demo.gif)
+
+

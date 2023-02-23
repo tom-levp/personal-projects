@@ -1,37 +1,37 @@
 [
     {
         "team": [
-            "Marie",
-            "Clément"
-        ],
-        "score": 3
-    },
-    {
-        "team": [
-            "Christine",
-            "Dan"
-        ],
-        "score": 3
-    },
-    {
-        "team": [
             "Kelly",
-            "Kenneth"
-        ],
-        "score": 2
-    },
-    {
-        "team": [
-            "Nathalie",
             "Lise"
         ],
-        "score": 1
+        "score": 7
     },
     {
         "team": [
             "Martin",
-            "Louis"
+            "Christine"
         ],
-        "score": 1
+        "score": 4
+    },
+    {
+        "team": [
+            "Dan",
+            "Kenneth"
+        ],
+        "score": 4
+    },
+    {
+        "team": [
+            "Nathalie",
+            "Marie"
+        ],
+        "score": 3
+    },
+    {
+        "team": [
+            "Louis",
+            "Clément"
+        ],
+        "score": 2
     }
 ]
